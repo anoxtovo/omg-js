@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="My Happy Hour App">
+	<meta name="keywords" content="My Happy Hour, Happy Hour App">
+
+	<title>< MHH > My Happy-Hour</title>
+
+	<link rel="stylesheet" type="text/css" href="">
+	<!-- <link rel="stylesheet" type="text/css" href=""> -->
+
+
+</head>
+<body>
+
+	<!-- Scripts -->
+	<script>
+		// List of Quotes
+		var objects = [
+		'Van999',
+		'Bus8684',
+		'Bike',
+		'Boat6',
+		'Helicopter',
+		'Aeroplane',
+		'Car',
+		'THE-MAGIC-WORD'
+		];
+
+		// List of Names
+		var keywords = [
+		'red',
+		'DarkBlue',
+		'White',
+		'LightBlack',
+		'maroon',
+		'Light-Purple',
+		'Dark-Lime-Green',
+		'CODE-ABCD123'
+		];
+
+		var randomNumber = Math.floor(Math.random()*objects.length);
+		var objectName = objects[randomNumber];
+		var keywordName = keywords[randomNumber];
+
+		// constant for hold last elemet length
+		const lastElementInObjects = objects[objects.length - 1];
+		
+		// constant for hold length of secretkey 
+		const secretKey = keywords[ - 1 ]
+		
+		// check if it's magic number or not
+		console.log(objectName.length);
+		
+		if (objectName.length === lastElementInObjects.length) {
+			document.write("<h1>Congratulations!, you got the secret number <span>{ " + lastElementInObjects + "} </span> here you go...<br> The key is: <span><" + keywords[ - 1 ] + "></span>.</h1>")
+
+		} else if (objectName.length != lastElementInObjects.length){	
+			document.write("<h1>WOW!, you found <span> " + keywordName + " </span>vehical, but i'm not sure what it's looks like???...<br> Oh is it " + objectName + " ?, Hell No!, yes it is.");
+		}
+
+	
+	</script>
+</body>
+</html>
