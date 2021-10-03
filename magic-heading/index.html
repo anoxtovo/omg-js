@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+			<meta charset="utf-8">
+			<title>Mr. Click Me</title>
+	</head>
+	<body>
+
+		<h1>MAGIC Heading</h1>
+		<a href="#">Click me</a>
+
+		<script type="text/javascript">
+			var linkSelect = document.querySelector("a");
+
+			linkSelect.addEventListner('click', function(){
+				var headingSelect = document.querySelector("h1");
+				headingSelect.innerHTML="Changed!";
+			});
+		</script>
+	</body>
+</html>
