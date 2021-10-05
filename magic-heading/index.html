@@ -3,19 +3,85 @@
 	<head>
 			<meta charset="utf-8">
 			<title>Mr. Click Me</title>
+			<style>
+
+				/* Basic Styles */
+				body {
+					background: #2E2C2C;
+					width: 800px;
+					margin: 0 auto;
+					font-family: monospace;
+					color: #fff;
+				}
+
+				h1 {
+					text-transform: uppercase;
+					font-size: 42px;
+				}
+
+				span {
+					font-size: 20px;
+					color: #FF3333;
+				}
+
+				a{	
+					margin-top: 1rem;
+					text-decoration: none;
+					text-transform: uppercase;
+					color: #FFF;
+					background: #3F8C67;
+					height: 5px;
+					width: auto;
+					padding: 5px;
+					border: 2px solid #00FF86;
+				}
+
+				a:hover {
+					color: #FF3333;
+				}
+
+			</style>
 	</head>
+
 	<body>
 
-		<h1>MAGIC Heading</h1>
-		<a href="#">Click me</a>
-
 		<script type="text/javascript">
-			var linkSelect = document.querySelector("a");
+			// Get input
+			var magicInput = window.prompt("What is the MAGIC keyword to Open door");
+			
+			// magic keyword
+			var magicVariable = "bob";
+			
+			if (magicVariable === magicInput) {
+				document.write("<h1> Congratulations...</h1><span>Hey "+magicVariable+"! Here your,</span><br></h1>");
+				
+				document.write("<br><a href='#'>Magic Link </a>");
 
-			linkSelect.addEventListner('click', function(){
-				var headingSelect = document.querySelector("h1");
-				headingSelect.innerHTML="Changed!";
-			});
+				// select link and change HEADING
+				var linkSelect = document.querySelector("a");
+
+				linkSelect.addEventListener('click', function(){
+					// select & change h1 content
+					headingSelect = document.querySelector('h1')
+					headingSelect.innerHTML="Hey,<br>Congratulations Buddy This is Your Magic Heading";
+				});
+
+			} else {
+				document.write("<h1> Oops...<br><span>{HINT: try-to-inspect-and-get-some-hint}</span></h1>");
+				console.log("Hello master "+magicVariable+", Oops -_- , Oh Memory your not master "+magicVariable+".");
+
+				// refresh link
+				document.write("<br><a href='#'>Reload</a>");
+
+				// select link and refresh function
+				var linkSelect = document.querySelector('a');
+				linkSelect.addEventListener('click', function(){
+
+					// reload function
+					location.reload();
+				});
+			}
+
 		</script>
 	</body>
 </html>
