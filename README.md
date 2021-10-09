@@ -7,8 +7,8 @@ Feel Free to contribute, Play & Enjoy.
 
 ### Project List
 
-[000 - bmw-winner](../omg-js/tree/main/bmw-winner)
+[000 - bmw-winner](../main/bmw-winner)
 
-[001 - magic-number](../omg-js/tree/main/magic-number)
+[001 - magic-number](../main/magic-number)
 
-[002 - magic-heading](../omg-js/tree/main/magic-heading)
+[002 - magic-heading](../main/magic-heading)
