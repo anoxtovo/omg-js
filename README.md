@@ -12,3 +12,5 @@ Feel Free to contribute, Play & Enjoy.
 [001 - magic-number](../main/magic-number)
 
 [002 - magic-heading](../main/magic-heading)
+
+[003 - magic-heading-updated](../main/magic-heading-updated)
