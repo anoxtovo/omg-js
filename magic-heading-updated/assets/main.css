@@ -17,7 +17,9 @@ span {
 	color: #FF3333;
 }
 
-a{	
+a { margin-right: 10px; }
+
+#magicnum{	
 	margin-top: 1rem;
 	text-decoration: none;
 	text-transform: uppercase;
@@ -29,6 +31,18 @@ a{
 	border: 2px solid #00FF86;
 }
 
-a:hover {
+#magicnum:hover {
 	color: #FF3333;
+}
+
+#reset{	
+	margin-top: 1rem;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #FFF;
+	background: #DC143C;
+	height: 5px;
+	width: auto;
+	padding: 5px;
+	border: 2px solid #FF6347;
 }
