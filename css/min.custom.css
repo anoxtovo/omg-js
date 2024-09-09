@@ -20,7 +20,7 @@ a:hover {
 }
 
 /* Header Styles */
-.header {
+header.header {
     background-color: #ffffff;
     border-bottom: 2px solid #e0e0e0;
     padding: 15px 20px;
@@ -28,26 +28,34 @@ a:hover {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.header h1 {
+header h1 {
     margin: 0;
     font-size: 2.2em;
     font-weight: 700;
     color: #333;
 }
 
-.nav-bar-section {
-    margin-top: 15px;
+/* Navigation Styles */
+nav.nav-bar-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+    display: flex;
+    justify-content: center;
 }
 
-.nav-bar-section a {
+nav.nav-bar-section ul li {
     margin: 0 15px;
+}
+
+nav.nav-bar-section a {
     font-weight: 600;
     color: #333;
     font-size: 1.1em;
     transition: color 0.3s ease;
 }
 
-.nav-bar-section a:hover {
+nav.nav-bar-section a:hover {
     color: #0073e6;
 }
 
@@ -104,7 +112,7 @@ a:hover {
     margin-bottom: 25px;
 }
 
-.game-card a {
+.play-button {
     background-color: #0073e6;
     color: white;
     padding: 12px 28px;
@@ -113,7 +121,7 @@ a:hover {
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-.game-card a:hover {
+.play-button:hover {
     background-color: #005bb5;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
@@ -124,7 +132,7 @@ a:hover {
 }
 
 /* Footer Styles */
-.footer {
+footer.footer {
     background-color: #f5f5f5;
     color: #666;
     text-align: center;
@@ -133,7 +141,7 @@ a:hover {
     border-top: 2px solid #e0e0e0;
 }
 
-.footer a {
+footer a {
     color: #0073e6;
 }
 
@@ -153,7 +161,7 @@ a:hover {
         width: 100%;
     }
 
-    .nav-bar-section a {
+    nav.nav-bar-section a {
         display: block;
         margin: 10px 0;
     }

@@ -3,40 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="OMG JS - A collection of fun games developed with JavaScript. Play games like Guess the Number and Rock Paper Scissors.">
+    <meta property="og:title" content="OMG JS - GAME">
+    <meta property="og:description" content="Fun game collection developed with JavaScript.">
+    <meta property="og:type" content="website">
     <title>OMG JS - GAME</title>
     <link rel="stylesheet" href="css/min.custom.css">
 </head>
 <body>
     <div class="body-wrapper">
-        <div class="header">
+        <!-- Header Section -->
+        <header class="header">
             <h1>OMG JS - GAME</h1>
-            <div class="nav-bar-section">
-                <a href="index.html">Home</a>
-                <a href="game.html">Game</a>
-                <a href="about.html">About</a>
-            </div>
-        </div>
-        <div class="content">
-            <div class="hero-section">
-                <h2>Fun game collection developed by using JS</h2>
+            <!-- Navigation Section -->
+            <nav class="nav-bar-section" aria-label="Main Navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="game.html">Game</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Main Content Section -->
+        <main class="content">
+            <!-- Hero Section -->
+            <section class="hero-section">
+                <h2>A CTF like fun game collection developed with JavaScript</h2>
                 <p>Navigate each game down below and have fun!</p>
-            </div>
-            <div class="games-section">
-                <div class="game-card">
+            </section>
+
+            <!-- Games Section -->
+            <section class="games-section">
+                <!-- Game Card 1 -->
+                <article class="game-card">
                     <h3>Guess the Number</h3>
                     <p>Guess the number between 1 and 100</p>
-                    <a href="game.html">Play</a>
-                </div>
-                <div class="game-card">
+                    <a href="game.html" class="play-button" aria-label="Play Guess the Number">Play</a>
+                </article>
+                <!-- Game Card 2 -->
+                <article class="game-card">
                     <h3>Rock Paper Scissors</h3>
                     <p>Play Rock Paper Scissors against the computer</p>
-                    <a href="game.html">Play</a>
-                </div>
-            </div>
-        </div>
-        <div class="footer">
-            <p>Developed by: <a href="https://github.com/anoxtovo/">@anoxtovo</a>
-        </div>
+                    <a href="game.html" class="play-button" aria-label="Play Rock Paper Scissors">Play</a>
+                </article>
+            </section>
+        </main>
+
+        <!-- Footer Section -->
+        <footer class="footer">
+            <p>Developed by: <a href="https://github.com/anoxtovo/" target="_blank" rel="noopener">@anoxtovo</a></p>
+        </footer>
     </div>
 </body>
 </html>
