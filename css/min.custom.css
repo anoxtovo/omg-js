@@ -1,31 +1,35 @@
 /* General Styles */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    font-family: 'Georgia', serif;
+    background-color: #f9f9f9;
     margin: 0;
     padding: 0;
     color: #333;
+    line-height: 1.6;
 }
 
 a {
     text-decoration: none;
-    color: #3498db;
+    color: #1a73e8;
 }
 
 a:hover {
-    color: #2980b9;
+    text-decoration: underline;
 }
 
 /* Header Styles */
 .header {
-    background-color: #2c3e50;
-    color: white;
-    padding: 20px;
+    background-color: #fff;
+    border-bottom: 2px solid #ddd;
+    padding: 15px 20px;
     text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .header h1 {
     margin: 0;
+    font-size: 2.5em;
+    color: #333;
 }
 
 .nav-bar-section {
@@ -33,82 +37,116 @@ a:hover {
 }
 
 .nav-bar-section a {
-    margin: 0 15px;
+    margin: 0 20px;
     font-weight: bold;
-    color: #ecf0f1;
+    color: #333;
+    font-size: 1.1em;
 }
 
 .nav-bar-section a:hover {
-    color: #bdc3c7;
+    color: #1a73e8;
 }
 
 /* Hero Section Styles */
 .hero-section {
-    background-color: #ecf0f1;
-    padding: 40px;
+    background-color: #fff;
+    padding: 60px 20px;
     text-align: center;
+    border-bottom: 2px solid #ddd;
 }
 
 .hero-section h2 {
-    margin: 0;
-    font-size: 2.5em;
+    font-size: 2.2em;
+    color: #333;
+    margin-bottom: 20px;
 }
 
 .hero-section p {
     font-size: 1.2em;
-    margin-top: 10px;
+    color: #666;
 }
 
 /* Games Section Styles */
 .games-section {
     display: flex;
     justify-content: space-around;
-    padding: 20px;
-    background-color: white;
+    flex-wrap: wrap;
+    padding: 40px 20px;
+    background-color: #fff;
 }
 
 .game-card {
-    background-color: #e74c3c;
-    color: white;
+    background-color: #f0f0f0;
     padding: 20px;
     width: 30%;
-    border-radius: 10px;
+    margin: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
 }
 
 .game-card h3 {
-    margin: 0 0 10px;
+    margin-bottom: 15px;
     font-size: 1.5em;
+    color: #333;
 }
 
 .game-card p {
     font-size: 1.1em;
-    margin-bottom: 15px;
+    color: #555;
+    margin-bottom: 20px;
 }
 
 .game-card a {
-    background-color: white;
-    color: #e74c3c;
+    background-color: #1a73e8;
+    color: white;
     padding: 10px 20px;
     border-radius: 5px;
     font-weight: bold;
+    transition: background-color 0.3s ease;
 }
 
 .game-card a:hover {
-    background-color: #c0392b;
-    color: white;
+    background-color: #1558c3;
+}
+
+.game-card:hover {
+    transform: translateY(-5px);
 }
 
 /* Footer Styles */
 .footer {
-    background-color: #2c3e50;
-    color: #ecf0f1;
+    background-color: #f9f9f9;
+    color: #666;
     text-align: center;
     padding: 20px;
     margin-top: 40px;
+    border-top: 2px solid #ddd;
 }
 
 .footer a {
-    color: #3498db;
+    color: #1a73e8;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .game-card {
+        width: 45%;
+    }
+
+    .hero-section h2 {
+        font-size: 1.8em;
+    }
+}
+
+@media (max-width: 576px) {
+    .game-card {
+        width: 100%;
+    }
+
+    .nav-bar-section a {
+        display: block;
+        margin: 10px 0;
+    }
 }
