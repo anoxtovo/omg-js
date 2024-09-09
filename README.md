@@ -7,6 +7,9 @@
 Feel Free to contribute, Play & Enjoy.
 </div>
 
+<!-- Navigation URL -->
+[OMG-JS](https://anoxtovo.github.io/omg-js/)
+
 ### Challenge List
 
 [000 - bmw-winner](../main/games/bmw-winner)
