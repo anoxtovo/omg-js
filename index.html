@@ -3,13 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="OMG JS - A collection of fun games developed with JavaScript. Play games like Guess the Number and Rock Paper Scissors.">
+    <meta name="description"
+        content="OMG JS - A collection of fun games developed with JavaScript. Play games like Guess the Number and Rock Paper Scissors.">
     <meta property="og:title" content="OMG JS - GAME">
     <meta property="og:description" content="Fun game collection developed with JavaScript.">
     <meta property="og:type" content="website">
+    <!-- viewport -->
     <title>OMG JS - GAME</title>
     <link rel="stylesheet" href="css/min.custom.css">
+    <link rel="icon" href="omg-js.png" type="image/png">
 </head>
+
 <body>
     <div class="body-wrapper">
         <!-- Header Section -->
@@ -19,8 +23,8 @@
             <nav class="nav-bar-section" aria-label="Main Navigation">
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="game.html">Game</a></li>
-                    <li><a href="about.html">About</a></li>
+                    <li><a href="#games">Game</a></li>
+                    <li><a href="#about">About</a></li>
                 </ul>
             </nav>
         </header>
@@ -29,24 +33,64 @@
         <main class="content">
             <!-- Hero Section -->
             <section class="hero-section">
+                <!-- hero image -->
+                <img src="omg-js.png" alt="Hero Image" class="hero-image">
                 <h2>A CTF like fun game collection developed with JavaScript</h2>
                 <p>Navigate each game down below and have fun!</p>
             </section>
 
             <!-- Games Section -->
-            <section class="games-section">
+            <section class="games-section" id="games">
                 <!-- Game Card 1 -->
                 <article class="game-card">
-                    <h3>Guess the Number</h3>
-                    <p>Guess the number between 1 and 100</p>
+                    <h3>BMW Winner</h3>
+                    <p>
+                        A simple game that asks for your name input and if you entered correct name, you win a BMW car.
+                        This simple code game developed for
+                        understanding the basic concepts like variables <span class="code-inline">var</span>, <span
+                            class="code-inline">Array</span>,
+                        and <span class="code-inline">window.prompt()</span>, and <span class="code-inline">
+                            document.write()</span> functions.
+
+                        hints: Check console by inspecting
+                    </p>
                     <a href="" class="play-button" aria-label="Play Guess the Number">Play</a>
                 </article>
                 <!-- Game Card 2 -->
                 <article class="game-card">
-                    <h3>Rock Paper Scissors</h3>
-                    <p>Play Rock Paper Scissors against the computer</p>
+                    <h3>Magic Heading</h3>
+                    <p>
+                        Find out the magic keyword and win the easter egg, This is a advanced version of BMW Winner
+                        game, In here
+                        ask for a magic keyword and if you entered correct keyword, you win the easter egg, and reveal
+                        the hidden link.
+                        In here explores the concepts <span class="code-inline">document.querySelector()</span>
+                        function, <span class="code-inline">addEventListener()</span>.
+                        function and java script<span class="code-inline"> function()</span>.
+                    </p>
                     <a href="game.html" class="play-button" aria-label="Play Rock Paper Scissors">Play</a>
                 </article>
+                <!-- Gamec Card 3 -->
+                <article class="game-card">
+                    <h3>Magic Heading Updated</h3>
+                    <p>
+                        A updated version of Magic Heading game, in here externalized the java script code and added some css to make it more interactive.
+                        nothing really special about this version, with this version just for understanding how to externalize the java script code to your projects.
+                    </p>
+                    <a href="games/rock-paper-scissors/index.html" class="play-button"
+                        aria-label="Play Rock Paper Scissors">Play</a>
+                </article>
+                <!-- Game Card 4 -->
+                <article class="game-card">
+                    <h3>Magic Number</h3>
+                    <p>
+                        A secret number guessing game, where you have to guess the secret number, guess the correct number and win the game. With this game you are able to get an idea about,
+                        how to use the mathematical functions like <span class="code-inline">Math.floor()</span>, <span class="code-inline">Math.random()</span>, JavaScript
+                        <span class="code-inline">Objects</span> and functions.
+                    </p>
+                    <a href="games/guess-the-number/index.html" class="play-button" aria-label="Play Guess the Number">Play</a>
+                </article>
+
             </section>
         </main>
 
@@ -56,4 +100,5 @@
         </footer>
     </div>
 </body>
+
 </html>
