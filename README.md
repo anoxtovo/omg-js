@@ -9,11 +9,11 @@ Feel Free to contribute, Play & Enjoy.
 
 ### Challenge List
 
-[000 - bmw-winner](../main/bmw-winner)
+[000 - bmw-winner](../main/games/bmw-winner)
 
-[001 - magic-number](../main/magic-number)
+[001 - magic-number](../main/games/magic-number)
 
-[002 - magic-heading](../main/magic-heading)
+[002 - magic-heading](../main/games/magic-heading)
 
-[003 - magic-heading-updated](../main/magic-heading-updated)
+[003 - magic-heading-updated](../main/games/magic-heading-updated)
 
